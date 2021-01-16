@@ -1,3 +1,6 @@
+//This program finds possible anagrams based on string entered
+//I'm using a english words file found on the internet, you may replace this if you want words in your language
+
 using System;
 using System.Collections.Generic;
 using System.Globalization;
