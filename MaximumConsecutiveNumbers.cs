@@ -14,9 +14,9 @@ class Program
         int numberToBeCounted = 1;
 
         var result = ConsecutiveNumbers(input);
-        Console.WriteLine(result.Item1.ToString() + " consecutive " + result.Item2 + "s found");
+        Console.WriteLine(result.Item1 + " consecutive " + result.Item2 + "s found");
 
-        Console.WriteLine(ConsecutiveNumbers(input, numberToBeCounted).ToString() + " consecutive " + numberToBeCounted + "s found");
+        Console.WriteLine(ConsecutiveNumbers(input, numberToBeCounted) + " consecutive " + numberToBeCounted + "s found");
     }
 
     // This method compares all array positions and give the maximum number of any consecutive number.
