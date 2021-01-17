@@ -107,9 +107,11 @@ public static class Program
         //Remove white spaces
         expression = Regex.Replace(expression, @"\s", "");
         
-        //Turns all characters into lower. 
-        //Then, Part and Trap will be anagrams when compared
-        expression = expression.ToLower();
+        //Remove any non-letter character
+        //Also, turns every character into lower to easy the string comparison
+        //So, Part and Trap will be anagrams when compared
+        expression = new string(expression.Where(char.IsLetter).ToArray())
+                                .ToLower();
 
         return expression;
     }
